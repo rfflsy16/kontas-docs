@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import CopyButton from "@/components/CopyButton";
+import Stars from "@/components/Stars";
 
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen bg-gradient-to-b from-gray-900 to-black">
-        {/* Hero Section */}
-        <div className="container mx-auto px-4 pt-32 pb-20">
+      <main className="min-h-screen bg-gradient-to-b from-gray-900 to-black overflow-hidden">
+        <Stars />
+        <div className="container mx-auto px-4 pt-32 pb-20 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <div className="mb-8">
               <Image
