@@ -1,5 +1,6 @@
 import VideoBackground from "@/components/home/VideoBackground";
 import HeroSection from "@/components/home/HeroSection";
+import FeaturesSection from "@/components/home/FeatureSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <VideoBackground />
         <div className="container mx-auto px-4 pt-32 pb-20 relative z-10">
           <HeroSection />
+          <FeaturesSection />
         </div>
       </main>
     </>

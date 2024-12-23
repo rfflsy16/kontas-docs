@@ -1,8 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import CopyButton from "../ui/CopyButton";
 
 export default function HeroSection() {
+  const scrollToFeatures = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    document.getElementById("features")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="text-center max-w-4xl mx-auto">
       <div className="mb-8">
@@ -43,6 +52,7 @@ export default function HeroSection() {
 
       <Link
         href="#features"
+        onClick={scrollToFeatures}
         className="text-gray-400 hover:text-gray-300 flex items-center justify-center gap-2"
       >
         See why developers love KONTAS
